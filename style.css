@@ -26,6 +26,8 @@ h5 {
 p {
   color: rgb(253, 253, 253);
   text-align: center;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 li {
   padding-left: 20px;
@@ -61,7 +63,8 @@ ul {
   margin-left: 40px;
 }
 .border {
-  border: 5px solid rgb(251, 255, 0);
+  border: 5px solid rgb(177, 177, 173);
+  border-radius: 25%;
 }
 iframe {
   margin-left: auto;
