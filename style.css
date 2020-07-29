@@ -74,14 +74,55 @@ ul {
 .border {
   border: 5px solid rgb(177, 177, 173);
   border-radius: 25%;
+  box-sizing: border-box;
 }
 iframe {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-.free {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
+
+.degla {
+  background: url(./images/3.jpg);
+  background-attachment: fixed;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+div {
+  margin: 50px auto;
+  width: 100vw;
+  position: relative;
+  left: 100px;
+}
+
+div::before {
+  content: "Facebook Page";
+  text-align: center;
+  background: rgb(75, 183, 255);
+  width: 150px;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+div::after {
+  content: "Join Our";
+  text-align: center;
+  background: rgb(149, 204, 241);
+  width: 150px;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  z-index: -2;
+  transition: all 0.5s linear;
+}
+div:hover::after,
+div:hover::before {
+  top: 0;
+  left: 0;
 }
